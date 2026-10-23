@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-project"
+version = "0.1.0"
+description = "A small OpenAI-compatible chat API starter"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115",
+    "httpx>=0.27",
+    "uvicorn[standard]>=0.30",
+]
+
+[tool.setuptools]
+packages = ["app"]
